@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>최윤규 ♥ 구은정 결혼식에 초대합니다</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 메인 인트로 -->
+  <header class="hero">
+    <img src="배경.jpg" alt="메인 배경 사진" class="main-photo">
+    <div class="hero-text">
+      <h1>💑 최윤규 ♥ 구은정</h1>
+      <p>✨ 2024년 10월 21일 (월) <br>📍 제주도 어딘가</p>
+    </div>
+  </header>
+
+  <!-- 신랑/신부 인사말 -->
+  <section class="greeting">
+    <h2>💌 신랑·신부의 인사말</h2>
+    <p>저희 두 사람이 하나가 되는 소중한 날,<br>바쁘시더라도 보시고 축복해주시면 감사하겠습니다. 🙏</p>
+  </section>
+
+  <!-- 갤러리 9분할 -->
+  <div class="gallery-container">
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="1.jpg" alt="Image 1" />
+        </div>
+        <div class="gallery-item">
+            <img src=".jpg" alt="Image 2" />
+        </div>
+        <div class="gallery-item">
+            <img src="3.jpg" alt="Image 3" />
+        </div>
+        <div class="gallery-item">
+            <img src="4.jpg" alt="Image 4" />
+        </div>
+        <div class="gallery-item">
+            <img src="5.jpg" alt="Image 5" />
+        </div>
+        <div class="gallery-item">
+            <img src="6.jpg" alt="Image 6" />
+        </div>
+        <div class="gallery-item">
+            <img src="7.jpg" alt="Image 7" />
+        </div>
+        <div class="gallery-item">
+            <img src="8.jpg" alt="Image 8" />
+        </div>
+        <div class="gallery-item">
+            <img src="9.jpg" alt="Image 9" />
+        </div>
+    </div>
+</div>
+
+  
+  </section>
+
+
+  <!-- 결혼식 일정 추가 -->
+  <<section class="calendar">
+    <h2>📅 결혼 달력</h2>
+    <div class="calendar-header">
+      <button onclick="changeMonth(-1)">◀️ 이전</button>
+      <span id="monthYear"></span>
+      <button onclick="changeMonth(1)">다음 ▶️</button>
+    </div>
+    <div class="calendar-grid" id="calendarDays"></div>
+    <p>💍 결혼 날짜: <span id="selectedDate"></span></p>
+  </section>
+  
+  <!-- 전화하기 / 계좌 정보 -->
+  <section class="contact">
+    <button onclick="location.href='tel:01021887279'">📞 신랑에게 전화하기</button>
+    <button onclick="location.href='tel:01066609859'">📞 신부에게 전화하기</button>
+
+    <h2>🎁 마음 전하실 곳</h2>
+    <p>💙 신랑 계좌: 우리은행 1002-348-011092 (최윤규)</p>
+    <p>💖 신부 계좌: 우리은행 987-654-3210 (구은정)</p>
+  </section>
+
+  <!-- 방명록 -->
+  <section class="guestbook">
+    <h2>📖 방명록</h2>
+    <form id="guestbookForm">
+      <input type="text" id="guestName" placeholder="이름 ✨" required>
+      <textarea id="guestMessage" placeholder="메시지를 남겨주세요 💌" required></textarea>
+      <button type="submit">📝 방명록 남기기</button>
+    </form>
+    <ul id="guestbookList"></ul>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
